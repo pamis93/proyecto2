@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(112, 112, 112, 0.562);
+}
+
+header {
+    color:white;
+    height: 20em;
+    width: 100vw;
+    background-color: #85C1E9;
+    text-align: center;
+    margin: 0;
+}
+/*----------------------SLIDER------------------------*/
+/* En la clase slider hay que seleccionar en ancho un 400% porque hay
+4 fotos y queremos que cada una de ella ocupe el 100%.
+Con el overflow es para que no se vea lo que quede fuera del "contenedor
+slider" y seleccionamos "hidden".
+@keyframe es la "formula" de la animacion, hay que ponerle el nombre
+que le hayamos puesto a la animacion dentro de la clase, en este caso
+"slide"
+alternate es para ir alternando
+ease-in-out es para que sea una transicion suavve y no quede muy brusco
+ENLACE:https://www.youtube.com/watch?v=bkgnp2lp7FQ */
+.slider{
+    height: 20em;
+    width: 400vw;
+    overflow: hidden;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+}
+
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+
+.slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+}
+
+header h1 {
+    margin-top: 0;
+}
+footer {
+    width: 100vw;
+    height: auto;
+    background-color: beige;
+    margin: auto 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    height: 3em;
+    width: 100vw;
+    margin: auto;
+}
+
+.nav-browse__active{
+    background-color:#2874A6;
+    display: flex;
+    height: 3em;
+    width:40% ;
+    align-items: center;
+    justify-content: center;
+}
+.nav-browse__active a {
+    padding: 1px 1px;
+    margin-left: 50px;
+    border-radius: 4px;
+    background-color: #85C1E9;
+    box-shadow: black 3px 3px;
+}
+
+.nav-browse__active a:hover {
+    background-color:#0ac2a3 ;
+    color: white;
+}
+
+.nav-browse {
+    background-color: #2874A6;
+    height: 3em;
+    width: 60%;
+}
+
+.nav-browse button{
+    background-color:#85C1E9 ;
+}
+.input-nav__browse{
+    width: 70%;
+    justify-content: end;
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 50px;
+}
+.container {
+    background-color:rgb(20, 107, 219);
+    display: flex;
+    margin: 0;
+    height: 40em;
+    width: 100vw;
+}
+.container-left {
+    width: 65%;
+    height: auto;
+    background-color: rgb(20, 107, 219);
+    background-image: url(/assets/img/redsocial.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.container-right{
+    display: flex;
+    width: 35%;
+    height:auto;
+    background-color: #85C1E9 ;
+}
+.form-container__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px; 
+    margin-left: 80px; 
+    height: 80%;
+    width:70%;
+}
+
+.form_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+    margin-top: 100px auto;
+}
+
+.form_container input {
+    margin-top: 5px;
+
+}
